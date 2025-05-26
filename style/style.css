@@ -24,12 +24,21 @@ html, body {
     transform-origin: center center;
     animation: scaleUp 1s ease-in-out forwards;
     animation-delay: 2.3s;
+    animation: popOut 3s ease-in-out forwards;
+    animation-delay: 3.3s;
   }
 
 @keyframes popIn {
     to {
       transform: scaleX(1);
       opacity: 1;
+    }
+  }
+
+  @keyframes popOut {
+    to {
+      transform: scale(15);
+      opacity: 0;
     }
   }
 
