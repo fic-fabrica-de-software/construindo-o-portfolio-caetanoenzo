@@ -18,7 +18,7 @@ body {
 }
 
 .e-1 {
-    background-color: #e50815;
+    background-color: #b10510;
     height: 80px;
     width: 400px;
     bottom: 0px;
@@ -26,14 +26,16 @@ body {
 }
 
 .e-2 {
-    background-color: #e50815;
-    height: 400px;
-    width: 80px;
     position: absolute;
+    border-left: 80px solid #e50815;
+	border-top: 80px solid transparent;
+	border-bottom: 80px solid transparent;
+    height: 240px;
+    width: 0px;
 }
 
 .e-3 {
-    background-color: #e50815;
+    background-color: #b10510;
     height: 80px;
     width: 400px;
     top: 0px;
@@ -41,7 +43,7 @@ body {
 }
 
 .e-4 {
-    background-color: #b10510;
+    background-color: #e50815;
     height: 80px;
     width: 400px;
     top: 160px;
