@@ -1,21 +1,43 @@
-html, 
-body {
+html, body {
     height: 100vh;
-    width: 100wh;
+    width: 100vw; /* fixed */
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: black;
     color: white;
     overflow: hidden;
-}
-
-.loading {
+  }
+  
+  @keyframes scaleUp {
+    to {
+      transform: scale(1.4);
+    }
+  }
+  
+  .loading {
     position: relative;
     width: 242px;
     height: 400px;
     overflow: hidden;
-}
+    transform: scale(1);
+    transform-origin: center center; /* center scale */
+    animation: scaleUp 1s ease-in-out forwards;
+    animation-delay: 2.7s;
+  }
+
+@keyframes popIn {
+    to {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+
+  .loading > div {
+    transform: scaleX(0);
+    transform-origin: left;
+    opacity: 0;
+  }
 
 .e-1 {
     background-color: #b10510;
@@ -23,29 +45,50 @@ body {
     width: 400px;
     bottom: 0px;
     position: absolute;
+    animation: popIn 1s ease-in forwards;
+    animation-delay: 0s;
 }
+
+.e-2-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: visible;
+    width: 80px;
+    height: 400px;
+    z-index: 10;
+  }
 
 .e-2 {
     position: absolute;
-    border-left: 80px solid #e50815;
-	border-top: 80px solid transparent;
-	border-bottom: 80px solid transparent;
-    height: 240px;
-    width: 0px;
-}
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 400px;
+    background-color: #e50815;
+    clip-path: polygon(0 0, 100% 80px, 100% 320px, 0 100%);
+    box-shadow: 8px 8px 20px #00000083;
+    animation: popIn 1s ease-in forwards;
+    animation-delay: 0.7s;
+    z-index: 10;
+  }
 
 .e-3 {
-    background-color: #b10510;
+    position: absolute;
+    top: 0;
     height: 80px;
     width: 400px;
-    top: 0px;
-    position: absolute;
+    background-color: #b10510;
+    animation: popIn 1s ease-in forwards;
+    animation-delay: 1.2s;
 }
 
 .e-4 {
-    background-color: #e50815;
+    position: absolute;
+    top: 160px;
     height: 80px;
     width: 400px;
-    top: 160px;
-    position: absolute;
+    background-color: #e50815;
+    animation: popIn 1s ease-in forwards;
+    animation-delay: 1.7s;
 }
