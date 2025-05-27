@@ -125,3 +125,38 @@ width: 60%;
   border-radius: 10%;
   margin-bottom: 10px;
 }
+
+.netHeader{
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background-color: #0c0c0c;
+}
+
+.netHeader img{
+  height: 6vh;
+  padding: 22px
+}
+
+.pages{
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.pagesProf{
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: right;
+  margin-right: 10px;
+}
+
+.pagesProf img{
+  height: 6vh;
+  border-radius: 50%;
+}
