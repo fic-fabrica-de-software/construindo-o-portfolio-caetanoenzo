@@ -22,9 +22,9 @@ html, body {
     overflow: hidden;
     transform: scale(1);
     transform-origin: center center;
-    animation: scaleUp 3s ease-in-out forwards;
-    animation: popOut 3s ease-in-out forwards;
-    animation-delay: 1.7s;
+    animation: scaleUp 4s ease-in-out forwards;
+    animation: popOut 4s ease-in-out forwards;
+    animation-delay: 1.2s;
   }
 
 @keyframes popIn {
@@ -69,7 +69,7 @@ html, body {
     background-color: #0040bf;
     box-shadow: 0 0 50px 3px #0040bf;
     animation: popIn 0.5s ease-in forwards;
-    animation-delay: 0.3s;
+    animation-delay: 0.2s;
 }
 
 .e-3 {
@@ -80,7 +80,7 @@ html, body {
     background-color: #0040bf;
     box-shadow: 0 0 50px 3px #0040bf;
     animation: popIn 0.5s ease-in forwards;
-    animation-delay: 0.8s;
+    animation-delay: 0.6s;
 }
 
 .e-4 {
@@ -91,7 +91,7 @@ html, body {
     background-color: #0040bf;
     box-shadow: 0 0 50px 3px #0040bf;
     animation: popIn 0.5s ease-in forwards;
-    animation-delay: 1.3s;
+    animation-delay: 0.9s;
 }
 
 .flex{
