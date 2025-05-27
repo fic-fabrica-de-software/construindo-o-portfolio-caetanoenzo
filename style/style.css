@@ -24,7 +24,7 @@ html, body {
     transform-origin: center center;
     animation: scaleUp 3s ease-in-out forwards;
     animation: popOut 3s ease-in-out forwards;
-    animation-delay: 2.5s;
+    animation-delay: 1.7s;
   }
 
 @keyframes popIn {
@@ -69,7 +69,7 @@ html, body {
     background-color: #0040bf;
     box-shadow: 0 0 50px 3px #0040bf;
     animation: popIn 0.5s ease-in forwards;
-    animation-delay: 0.5s;
+    animation-delay: 0.3s;
 }
 
 .e-3 {
@@ -80,7 +80,7 @@ html, body {
     background-color: #0040bf;
     box-shadow: 0 0 50px 3px #0040bf;
     animation: popIn 0.5s ease-in forwards;
-    animation-delay: 1s;
+    animation-delay: 0.8s;
 }
 
 .e-4 {
@@ -91,7 +91,7 @@ html, body {
     background-color: #0040bf;
     box-shadow: 0 0 50px 3px #0040bf;
     animation: popIn 0.5s ease-in forwards;
-    animation-delay: 1.5s;
+    animation-delay: 1.3s;
 }
 
 .flex{
@@ -106,7 +106,8 @@ html, body {
   flex-direction: column;
   align-items: center;
   margin-left: 0px;
-  margin-top: 2%;  
+  margin-top: 2%;
+  font-size: 2.3vh;
 }
 
 .theme img{
@@ -121,4 +122,6 @@ width: 60%;
 
 .perfis img{
   width: 30%;
+  border-radius: 10%;
+  margin-bottom: 10px;
 }
