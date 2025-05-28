@@ -48,7 +48,6 @@ html, body {
   }
 
 .e-1 {
-    /*background-color: #b10510;*/
     height: 80px;
     width: 400px;
     bottom: 0px;
@@ -118,12 +117,12 @@ width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5px;
 }
 
 .perfis img{
   width: 30%;
   border-radius: 10%;
-  margin-bottom: 10px;
 }
 
 .hidden-zoom {
@@ -183,4 +182,37 @@ width: 60%;
 .mainProject img{
   width: 100%;
   height: 100%; 
+}
+
+.zoomAnim {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  padding: 5px;
+}
+
+.zoomAnim.slide-up {
+  transform: scale(0.9) translateY(-10px);
+}
+
+.zoomAnim.slide-down {
+  transform: scale(0.9) translateY(10px);
+}
+
+.zoomAnim.active {
+  transform: scale(1.3);
+  z-index: 10;
+}
+
+.zoomAnim.inactive {
+  filter: brightness(0.7);
+  z-index: 1;
+}
+
+.zoomAnim:hover{
+  transform: scale();
+}
+
+.perfisText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
