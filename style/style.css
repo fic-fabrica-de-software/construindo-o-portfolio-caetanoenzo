@@ -135,7 +135,7 @@ width: 60%;
 }
 
 .netHeader img{
-  height: 6vh;
+  height: 4.5vh;
   padding: 22px
 }
 
@@ -159,4 +159,17 @@ width: 60%;
 .pagesProf img{
   height: 6vh;
   border-radius: 50%;
+}
+
+.mainProject{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90% 
+}
+
+.mainProject img{
+  width: 100%;
+  height: 100%; 
 }
