@@ -125,3 +125,14 @@ width: 60%;
   border-radius: 10%;
   margin-bottom: 10px;
 }
+
+.hidden-zoom {
+  transform: scale(0.8);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.hidden-zoom.show {
+  transform: scale(1);
+  opacity: 1;
+}
