@@ -149,6 +149,10 @@ width: 60%;
   padding: 22px
 }
 
+.netHeader p{
+  font-size: 0.75rem;
+}
+
 .pages{
   display: flex;
   width: 40%;

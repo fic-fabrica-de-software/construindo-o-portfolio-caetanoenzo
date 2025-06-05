@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
++document.addEventListener('DOMContentLoaded', () => {
     const content = document.getElementById('content');
     const loading = document.querySelector('.loading');
   
